@@ -48,6 +48,7 @@ class MovieListSerializer(MovieSerializer):
             for actor in obj.actors.all()
         ]
 
+
 class MovieRetrieveSerializer(MovieSerializer):
     genres = GenreSerializer(many=True, read_only=True)
     actors = ActorSerializer(many=True, read_only=True)
@@ -72,7 +73,6 @@ class MovieSessionListSerializer(MovieSessionSerializer):
         source="cinema_hall.capacity",
         read_only=True,
     )
-
 
     class Meta(MovieSessionSerializer.Meta):
         fields = (
