@@ -1,6 +1,5 @@
 asgiref==3.12.1
 Django==6.1
-django-debug-toolbar==7.1.1
 djangorestframework==3.18.0
 flake8==5.0.4
 flake8-quotes==3.3.1
